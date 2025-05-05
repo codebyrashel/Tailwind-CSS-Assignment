@@ -6,12 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/style.css" rel="stylesheet">
   <script type="module" src="./src/main.js"></script>
-  <script>
-    // Dark mode toggle
-    function toggleDarkMode() {
-      document.documentElement.classList.toggle('dark');
-    }
-  </script>
 </head>
 <!-- BODY START -->
 
@@ -72,7 +66,7 @@
 
 <!-- Mobile Menu -->
 <div id="mobile-menu"
-  class="fixed top-[70px] left-0 w-1/2 h-screen bg-white dark:bg-[#111] shadow-lg z-40 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 space-y-6 md:hidden overflow-y-auto">
+  class="fixed top-[70px] left-0 w-[70%] h-screen bg-white dark:bg-[#111] shadow-lg z-40 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 space-y-6 md:hidden overflow-y-auto">
 
   <!-- Close Button -->
   <div class="flex justify-end">
@@ -1372,29 +1366,6 @@
     darkToggleMobile.addEventListener('click', toggleDarkMode);
   </script>
 
-  <!-- JavaScript for Active Button -->
-  <script>
-    const buttons = document.querySelectorAll(".course-btn");
-
-    buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        buttons.forEach(b => {
-          b.classList.remove("bg-[#00FF84]", "text-black", "active-course");
-          b.classList.add("text-[#2D3142]");
-        });
-        btn.classList.remove("text-[#2D3142]");
-        btn.classList.add("bg-[#00FF84]", "text-black", "active-course");
-      });
-    });
-  </script>
-
-  <!-- Dark Mode Toggle Script -->
-  <script>
-    const htmlTag = document.getElementById("htmlTag");
-    document.getElementById("switch").addEventListener("click", function () {
-      htmlTag.classList.toggle("dark");
-    });
-  </script>
 </body>
 
 </html>
