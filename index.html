@@ -17,45 +17,50 @@
 
 <body class="dark:bg-[#181C14] bg-[#FAFAFA] font-jakarta">
 
-  <!-- Header -->
-  <header class="max-w-[1440px] mx-auto px-4 md:px-[45px] py-4 flex items-center justify-between">
+<!-- Header -->
+<header class="max-w-[1440px] mx-auto px-4 md:px-[45px] py-4 flex items-center justify-between sticky top-0 z-50 bg-white dark:bg-[#111] shadow-sm transition-all duration-300">
 
-    <!-- Brand Logo -->
-    <a href="./index.html" class="flex-shrink-0">
-      <img src="./src/assets/images/header/logo.png" alt="Logo" class="h-10 w-auto" />
+  <!-- Brand Logo -->
+  <a href="./index.html" class="flex-shrink-0">
+    <img src="./src/assets/images/header/logo.png" alt="Logo" class="h-10 w-auto" />
+  </a>
+
+  <!-- Navigation Links (Visible on md and up) -->
+  <nav class="hidden md:flex items-center space-x-8">
+    <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-[#e24c51]">Home</a>
+    <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-[#e24c51]">About Us</a>
+    <a href="#" class="text-base font-medium text-[#F44335] dark:text-[#F44335] text-active border-b-2 border-active pb-0.5">Upskill</a>
+    <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-[#e24c51]">Contact Us</a>
+  </nav>
+
+  <!-- Buttons & Dark Mode Toggle (md and up) -->
+  <div class="hidden md:flex items-center gap-5">
+    <a href="#" class="px-5 py-2.5 bg-[#F44335] text-white text-base font-medium rounded-lg hover:bg-[#e24c51] transition">
+      Register Interest
     </a>
 
-    <!-- Navigation Links -->
-    <nav class="hidden md:flex items-center space-x-8">
-      <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-[#e24c51]">Home</a>
-      <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-[#e24c51]">About Us</a>
-      <a href="#"
-        class="text-base font-medium text-[#F44335] dark:text-[#F44335] text-active border-b-2 border-active pb-0.5">Upskill</a>
-      <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-[#e24c51]">Contact Us</a>
-    </nav>
+    <!-- Dark Mode Toggle -->
+    <button id="switch" class="text-black dark:text-white">
+      <svg width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer">
+        <path d="M34.4407 23.7534C32.5585 24.5378 30.5391 24.9404 28.5 24.9377C19.9738 24.9377 13.0625 18.0265 13.0625 9.50024C13.0625 7.3944 13.4837 5.38832 14.2468 3.55957C11.434 4.733 9.03128 6.71255 7.34133 9.24889C5.65137 11.7852 4.74974 14.7649 4.75 17.8127C4.75 26.339 11.6612 33.2502 20.1875 33.2502C23.2353 33.2505 26.215 32.3489 28.7513 30.6589C31.2877 28.969 33.2672 26.5662 34.4407 23.7534Z"
+          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
 
-    <!-- Buttons & Dark Mode Toggle -->
-    <div class="hidden md:flex items-center gap-5">
-      <!-- Register Button -->
-      <a href="#"
-        class="px-5 py-2.5 bg-[#F44335] text-white text-base font-medium rounded-lg hover:bg-[#e24c51] transition">
-        Register Interest
-      </a>
-
-      <!-- Dark Mode Toggle -->
-      <button id="switch" class="text-black dark:text-white">
-        <svg width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"
-          class="cursor-pointer">
-          <path
-            d="M34.4407 23.7534C32.5585 24.5378 30.5391 24.9404 28.5 24.9377C19.9738 24.9377 13.0625 18.0265 13.0625 9.50024C13.0625 7.3944 13.4837 5.38832 14.2468 3.55957C11.434 4.733 9.03128 6.71255 7.34133 9.24889C5.65137 11.7852 4.74974 14.7649 4.75 17.8127C4.75 26.339 11.6612 33.2502 20.1875 33.2502C23.2353 33.2505 26.215 32.3489 28.7513 30.6589C31.2877 28.969 33.2672 26.5662 34.4407 23.7534Z"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-      </button>
-    </div>
+  <!-- Mobile Controls (Below md) -->
+  <div class="md:hidden flex items-center gap-3">
+    <!-- Dark Mode Toggle -->
+    <button id="switch-mobile" class="text-black dark:text-white">
+      <svg width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer">
+        <path d="M34.4407 23.7534C32.5585 24.5378 30.5391 24.9404 28.5 24.9377C19.9738 24.9377 13.0625 18.0265 13.0625 9.50024C13.0625 7.3944 13.4837 5.38832 14.2468 3.55957C11.434 4.733 9.03128 6.71255 7.34133 9.24889C5.65137 11.7852 4.74974 14.7649 4.75 17.8127C4.75 26.339 11.6612 33.2502 20.1875 33.2502C23.2353 33.2505 26.215 32.3489 28.7513 30.6589C31.2877 28.969 33.2672 26.5662 34.4407 23.7534Z"
+          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
 
     <!-- Mobile Menu Button -->
-    <button type="button"
-      class="md:hidden inline-flex items-center gap-2 rounded-lg bg-[#FF5A5F] px-3 py-2 text-sm font-medium text-white hover:bg-[#e24c51] transition">
+    <button id="mobile-menu-btn" type="button"
+      class="inline-flex items-center gap-2 rounded-lg bg-[#FF5A5F] px-3 py-2 text-sm font-medium text-white hover:bg-[#e24c51] transition">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd"
           d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -63,7 +68,18 @@
       </svg>
       Menu
     </button>
-  </header>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu"
+  class="fixed inset-y-0 left-0 w-64 bg-white dark:bg-[#111] shadow-lg z-40 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 space-y-6 md:hidden">
+  <a href="#" class="text-base font-medium text-[#072125] dark:text-white transform translate-x-10 opacity-0 transition-all duration-300 delay-100">Home</a>
+  <a href="#" class="text-base font-medium text-[#072125] dark:text-white transform translate-x-10 opacity-0 transition-all duration-300 delay-200">About Us</a>
+  <a href="#" class="text-base font-medium text-[#F44335] dark:text-[#F44335] border-b-2 border-active pb-0.5 transform translate-x-10 opacity-0 transition-all duration-300 delay-300">Upskill</a>
+  <a href="#" class="text-base font-medium text-[#072125] dark:text-white transform translate-x-10 opacity-0 transition-all duration-300 delay-400">Contact Us</a>
+  <a href="#" class="mt-4 px-5 py-2.5 bg-[#F44335] text-white text-base font-medium rounded-lg hover:bg-[#e24c51] transition">Register Interest</a>
+</div>
 
   <!-- Hero Section -->
   <section id="hero" class="max-w-[1440px] mx-auto px-4 md:px-[114px] pt-12 pb-10 bg-[#FAFAFA] dark:bg-[#181C14]">
@@ -1311,6 +1327,28 @@
   </footer>
 
 
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let menuOpen = false;
+  
+    mobileMenuBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      if (menuOpen) {
+        mobileMenu.classList.remove('-translate-x-full');
+        setTimeout(() => {
+          mobileMenu.querySelectorAll('a').forEach((link) => {
+            link.classList.remove('translate-x-10', 'opacity-0');
+          });
+        }, 50);
+      } else {
+        mobileMenu.classList.add('-translate-x-full');
+        mobileMenu.querySelectorAll('a').forEach((link) => {
+          link.classList.add('translate-x-10', 'opacity-0');
+        });
+      }
+    });
+  </script>
 
   <!-- JavaScript for Active Button -->
   <script>
