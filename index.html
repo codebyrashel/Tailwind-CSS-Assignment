@@ -18,14 +18,14 @@
 <body class="dark:bg-[#181C14] bg-[#FAFAFA] font-jakarta">
 
 <!-- Header -->
-<header class="max-w-[1440px] mx-auto px-4 md:px-[45px] py-4 flex items-center justify-between sticky top-0 z-50 bg-white dark:bg-[#111] shadow-sm transition-all duration-300">
+<header class="max-w-[1440px] mx-auto px-4 md:px-[45px] py-4 flex items-center justify-between sticky top-0 bg-white dark:bg-[#111] z-50">
 
   <!-- Brand Logo -->
   <a href="./index.html" class="flex-shrink-0">
     <img src="./src/assets/images/header/logo.png" alt="Logo" class="h-10 w-auto" />
   </a>
 
-  <!-- Navigation Links (Visible on md and up) -->
+  <!-- Navigation Links (Desktop) -->
   <nav class="hidden md:flex items-center space-x-8">
     <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-[#e24c51]">Home</a>
     <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-[#e24c51]">About Us</a>
@@ -33,13 +33,12 @@
     <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-[#e24c51]">Contact Us</a>
   </nav>
 
-  <!-- Buttons & Dark Mode Toggle (md and up) -->
+  <!-- Buttons & Dark Mode Toggle (Desktop) -->
   <div class="hidden md:flex items-center gap-5">
-    <a href="#" class="px-5 py-2.5 bg-[#F44335] text-white text-base font-medium rounded-lg hover:bg-[#e24c51] transition">
+    <a href="#"
+      class="px-5 py-2.5 bg-[#F44335] text-white text-base font-medium rounded-lg hover:bg-[#e24c51] transition">
       Register Interest
     </a>
-
-    <!-- Dark Mode Toggle -->
     <button id="switch" class="text-black dark:text-white">
       <svg width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer">
         <path d="M34.4407 23.7534C32.5585 24.5378 30.5391 24.9404 28.5 24.9377C19.9738 24.9377 13.0625 18.0265 13.0625 9.50024C13.0625 7.3944 13.4837 5.38832 14.2468 3.55957C11.434 4.733 9.03128 6.71255 7.34133 9.24889C5.65137 11.7852 4.74974 14.7649 4.75 17.8127C4.75 26.339 11.6612 33.2502 20.1875 33.2502C23.2353 33.2505 26.215 32.3489 28.7513 30.6589C31.2877 28.969 33.2672 26.5662 34.4407 23.7534Z"
@@ -48,17 +47,9 @@
     </button>
   </div>
 
-  <!-- Mobile Controls (Below md) -->
+  <!-- Mobile Controls -->
   <div class="md:hidden flex items-center gap-3">
-    <!-- Dark Mode Toggle -->
-    <button id="switch-mobile" class="text-black dark:text-white">
-      <svg width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer">
-        <path d="M34.4407 23.7534C32.5585 24.5378 30.5391 24.9404 28.5 24.9377C19.9738 24.9377 13.0625 18.0265 13.0625 9.50024C13.0625 7.3944 13.4837 5.38832 14.2468 3.55957C11.434 4.733 9.03128 6.71255 7.34133 9.24889C5.65137 11.7852 4.74974 14.7649 4.75 17.8127C4.75 26.339 11.6612 33.2502 20.1875 33.2502C23.2353 33.2505 26.215 32.3489 28.7513 30.6589C31.2877 28.969 33.2672 26.5662 34.4407 23.7534Z"
-          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
-    </button>
-
-    <!-- Mobile Menu Button -->
+    <!-- Menu Button -->
     <button id="mobile-menu-btn" type="button"
       class="inline-flex items-center gap-2 rounded-lg bg-[#FF5A5F] px-3 py-2 text-sm font-medium text-white hover:bg-[#e24c51] transition">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -68,18 +59,39 @@
       </svg>
       Menu
     </button>
+
+    <!-- Dark Mode Toggle -->
+    <button id="switch-mobile" class="text-black dark:text-white">
+      <svg width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer">
+        <path d="M34.4407 23.7534C32.5585 24.5378 30.5391 24.9404 28.5 24.9377C19.9738 24.9377 13.0625 18.0265 13.0625 9.50024C13.0625 7.3944 13.4837 5.38832 14.2468 3.55957C11.434 4.733 9.03128 6.71255 7.34133 9.24889C5.65137 11.7852 4.74974 14.7649 4.75 17.8127C4.75 26.339 11.6612 33.2502 20.1875 33.2502C23.2353 33.2505 26.215 32.3489 28.7513 30.6589C31.2877 28.969 33.2672 26.5662 34.4407 23.7534Z"
+          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
   </div>
 </header>
 
 <!-- Mobile Menu -->
 <div id="mobile-menu"
-  class="fixed inset-y-0 left-0 w-64 bg-white dark:bg-[#111] shadow-lg z-40 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 space-y-6 md:hidden">
+  class="fixed top-[70px] left-0 w-1/2 h-screen bg-white dark:bg-[#111] shadow-lg z-40 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 space-y-6 md:hidden overflow-y-auto">
+
+  <!-- Close Button -->
+  <div class="flex justify-end">
+    <button id="mobile-menu-close" class="text-gray-600 dark:text-white hover:text-[#F44335] transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Nav Links -->
   <a href="#" class="text-base font-medium text-[#072125] dark:text-white transform translate-x-10 opacity-0 transition-all duration-300 delay-100">Home</a>
   <a href="#" class="text-base font-medium text-[#072125] dark:text-white transform translate-x-10 opacity-0 transition-all duration-300 delay-200">About Us</a>
   <a href="#" class="text-base font-medium text-[#F44335] dark:text-[#F44335] border-b-2 border-active pb-0.5 transform translate-x-10 opacity-0 transition-all duration-300 delay-300">Upskill</a>
   <a href="#" class="text-base font-medium text-[#072125] dark:text-white transform translate-x-10 opacity-0 transition-all duration-300 delay-400">Contact Us</a>
   <a href="#" class="mt-4 px-5 py-2.5 bg-[#F44335] text-white text-base font-medium rounded-lg hover:bg-[#e24c51] transition">Register Interest</a>
 </div>
+
 
   <!-- Hero Section -->
   <section id="hero" class="max-w-[1440px] mx-auto px-4 md:px-[114px] pt-12 pb-10 bg-[#FAFAFA] dark:bg-[#181C14]">
@@ -1330,24 +1342,34 @@
   <script>
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-    let menuOpen = false;
+    const mobileClose = document.getElementById('mobile-menu-close');
+    const darkToggleDesktop = document.getElementById('switch');
+    const darkToggleMobile = document.getElementById('switch-mobile');
   
-    mobileMenuBtn.addEventListener('click', () => {
-      menuOpen = !menuOpen;
-      if (menuOpen) {
-        mobileMenu.classList.remove('-translate-x-full');
-        setTimeout(() => {
-          mobileMenu.querySelectorAll('a').forEach((link) => {
-            link.classList.remove('translate-x-10', 'opacity-0');
-          });
-        }, 50);
-      } else {
-        mobileMenu.classList.add('-translate-x-full');
+    function openMenu() {
+      mobileMenu.classList.remove('-translate-x-full');
+      setTimeout(() => {
         mobileMenu.querySelectorAll('a').forEach((link) => {
-          link.classList.add('translate-x-10', 'opacity-0');
+          link.classList.remove('translate-x-10', 'opacity-0');
         });
-      }
-    });
+      }, 50);
+    }
+  
+    function closeMenu() {
+      mobileMenu.classList.add('-translate-x-full');
+      mobileMenu.querySelectorAll('a').forEach((link) => {
+        link.classList.add('translate-x-10', 'opacity-0');
+      });
+    }
+  
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  
+    mobileMenuBtn.addEventListener('click', openMenu);
+    mobileClose.addEventListener('click', closeMenu);
+    darkToggleDesktop.addEventListener('click', toggleDarkMode);
+    darkToggleMobile.addEventListener('click', toggleDarkMode);
   </script>
 
   <!-- JavaScript for Active Button -->
