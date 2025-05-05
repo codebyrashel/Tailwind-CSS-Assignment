@@ -14,490 +14,491 @@
   </script>
 </head>
 <!-- BODY START -->
+
 <body class="dark:bg-[#181C14] bg-[#FAFAFA] font-jakarta">
 
-<!-- Header -->
-<header class="max-w-[1440px] mx-auto px-4 md:px-[45px] py-4 flex items-center justify-between">
+  <!-- Header -->
+  <header class="max-w-[1440px] mx-auto px-4 md:px-[45px] py-4 flex items-center justify-between">
 
-  <!-- Brand Logo -->
-  <a href="./index.html" class="flex-shrink-0">
-    <img src="./src/assets/images/header/logo.png" alt="Logo" class="h-10 w-auto" />
-  </a>
-
-  <!-- Navigation Links -->
-  <nav class="hidden md:flex items-center space-x-8">
-    <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-active">Home</a>
-    <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-active">About Us</a>
-    <a href="#" class="text-base font-medium text-active border-b-2 border-active pb-0.5">Upskill</a>
-    <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-active">Contact Us</a>
-  </nav>
-
-  <!-- Buttons & Dark Mode Toggle -->
-  <div class="hidden md:flex items-center gap-5">
-    <!-- Register Button -->
-    <a href="#" class="px-5 py-2.5 bg-[#FF5A5F] text-white text-base font-medium rounded-lg hover:bg-[#e24c51] transition">
-      Register Interest
+    <!-- Brand Logo -->
+    <a href="./index.html" class="flex-shrink-0">
+      <img src="./src/assets/images/header/logo.png" alt="Logo" class="h-10 w-auto" />
     </a>
 
-    <!-- Dark Mode Toggle -->
-    <button id="switch" class="text-black dark:text-white">
-      <svg width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer">
-        <path d="M34.4407 23.7534C32.5585 24.5378 30.5391 24.9404 28.5 24.9377C19.9738 24.9377 13.0625 18.0265 13.0625 9.50024C13.0625 7.3944 13.4837 5.38832 14.2468 3.55957C11.434 4.733 9.03128 6.71255 7.34133 9.24889C5.65137 11.7852 4.74974 14.7649 4.75 17.8127C4.75 26.339 11.6612 33.2502 20.1875 33.2502C23.2353 33.2505 26.215 32.3489 28.7513 30.6589C31.2877 28.969 33.2672 26.5662 34.4407 23.7534Z"
-          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Navigation Links -->
+    <nav class="hidden md:flex items-center space-x-8">
+      <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-active">Home</a>
+      <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-active">About Us</a>
+      <a href="#"
+        class="text-base font-medium text-[#F44335] dark:text-[#F44335] text-active border-b-2 border-active pb-0.5">Upskill</a>
+      <a href="#" class="text-base font-medium text-[#072125] dark:text-white hover:text-active">Contact Us</a>
+    </nav>
+
+    <!-- Buttons & Dark Mode Toggle -->
+    <div class="hidden md:flex items-center gap-5">
+      <!-- Register Button -->
+      <a href="#"
+        class="px-5 py-2.5 bg-[#F44335] text-white text-base font-medium rounded-lg hover:bg-[#e24c51] transition">
+        Register Interest
+      </a>
+
+      <!-- Dark Mode Toggle -->
+      <button id="switch" class="text-black dark:text-white">
+        <svg width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="cursor-pointer">
+          <path
+            d="M34.4407 23.7534C32.5585 24.5378 30.5391 24.9404 28.5 24.9377C19.9738 24.9377 13.0625 18.0265 13.0625 9.50024C13.0625 7.3944 13.4837 5.38832 14.2468 3.55957C11.434 4.733 9.03128 6.71255 7.34133 9.24889C5.65137 11.7852 4.74974 14.7649 4.75 17.8127C4.75 26.339 11.6612 33.2502 20.1875 33.2502C23.2353 33.2505 26.215 32.3489 28.7513 30.6589C31.2877 28.969 33.2672 26.5662 34.4407 23.7534Z"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button type="button"
+      class="md:hidden inline-flex items-center gap-2 rounded-lg bg-[#FF5A5F] px-3 py-2 text-sm font-medium text-white hover:bg-[#e24c51] transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd" />
       </svg>
+      Menu
     </button>
-  </div>
+  </header>
 
-  <!-- Mobile Menu Button -->
-  <button type="button" class="md:hidden inline-flex items-center gap-2 rounded-lg bg-[#FF5A5F] px-3 py-2 text-sm font-medium text-white hover:bg-[#e24c51] transition">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-      <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-    </svg>
-    Menu
-  </button>
-</header>
+  <!-- Hero Section -->
+  <section id="hero" class="max-w-[1440px] mx-auto px-4 md:px-[114px] pt-12 pb-10 bg-[#FAFAFA] dark:bg-[#181C14]">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
 
-<!-- Hero Section -->
-<section id="hero" class="max-w-[1440px] mx-auto px-4 md:px-[114px] pt-12 pb-10 bg-[#FAFAFA] dark:bg-[#181C14]">
-  <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
-
-    <!-- Text Column -->
-    <div class="lg:w-5/12 text-center lg:text-left">
-      <p class="font-jakarta font-bold text-[#2D3142] dark:text-white text-base md:text-lg">
-        Discover <span class="text-active">-</span> Interact <span class="text-active">-</span> Engage
-      </p>
-
-      <h1 class="font-jakarta font-bold text-black dark:text-white text-[32px] md:text-[64px] leading-tight md:leading-[82px] my-6">
-        Google <br class="block md:hidden" />
-        <span class="text-active border-b-[3px] border-active inline-block">
-          IT Support
-        </span> Certificate
-      </h1>
-
-      <p class="font-jakarta text-gray-600 dark:text-white text-base md:text-lg mb-10">
-        This is your path to a career in IT. In this program, you’ll learn in-demand skills with no degree or experience required.
-      </p>
-
-      <!-- Stats Grid -->
-      <div class="flex flex-wrap justify-center lg:justify-start gap-x-10 gap-y-6 mb-10">
-        <div class="text-center">
-          <p class="text-[#00FF84] text-2xl font-bold">438</p>
-          <p class="text-[#2D3142] dark:text-white text-lg">Videos</p>
-        </div>
-        <div class="text-center">
-          <p class="text-[#00FF84] text-2xl font-bold">151</p>
-          <p class="text-[#2D3142] dark:text-white text-lg">Readings</p>
-        </div>
-        <div class="text-center">
-          <p class="text-[#00FF84] text-2xl font-bold">108</p>
-          <p class="text-[#2D3142] dark:text-white text-lg">Quizzes</p>
-        </div>
-        <div class="text-center">
-          <p class="text-[#00FF84] text-2xl font-bold">24</p>
-          <p class="text-[#2D3142] dark:text-white text-lg">Exercises</p>
-        </div>
-        <div class="text-center">
-          <p class="text-[#00FF84] text-2xl font-bold">4</p>
-          <p class="text-[#2D3142] dark:text-white text-lg">Assignments</p>
-        </div>
-      </div>
-
-      <!-- Buttons -->
-      <div class="flex flex-col sm:flex-row gap-5 sm:justify-center lg:justify-start">
-        <a href="#" class="bg-[#FF5A5F] hover:bg-[#e24c51] text-white px-9 py-4 rounded-lg text-lg font-medium transition">
-          Sign up
-        </a>
-        <a href="#" class="bg-white text-[#072125] dark:bg-transparent dark:text-white border border-[#FF5A5F] px-9 py-4 rounded-lg text-lg font-medium transition hover:bg-[#ff5a5f]/10">
-          Learn more
-        </a>
-      </div>
-    </div>
-
-    <!-- Image Section -->
-    <div class="relative lg:w-6/12 flex justify-center items-center">
-      <div class="relative z-10 w-full max-w-[480px]">
-        <img src="./src/assets/images/hero/hero.png" alt="Hero Image"
-          class="rounded-full object-cover w-full h-auto border-4 border-white dark:border-[#181C14]" />
-        <!-- Circles and decorations (optional, add via absolute divs or SVGs if needed) -->
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Brand Section -->
-<section id="brand" class="bg-white dark:bg-[#181C14] py-8">
-  <div class="max-w-[1440px] mx-auto px-4 md:px-10">
-    <div class="grid grid-cols-1 md:grid-cols-4 items-center divide-y md:divide-y-0 md:divide-x divide-[#D1D3D4] dark:divide-gray-700">
-      
-      <!-- Description -->
-      <div class="px-6 flex items-center justify-center md:justify-start h-[135px]">
-        <p class="text-[#2D3142] dark:text-white max-w-[300px] text-sm md:text-base leading-relaxed text-center md:text-left">
-          Pave your path to career success by gaining a professional Google certificate with the support of C4U
+      <!-- Text Column -->
+      <div class="lg:w-5/12 text-center lg:text-left">
+        <p class="font-jakarta font-bold text-[#2D3142] dark:text-white text-base md:text-lg">
+          Discover <span class="text-active text-[#F44335]">-</span> Interact <span
+            class="text-active text-[#F44335]">-</span> Engage
         </p>
-      </div>
 
-      <!-- Google Logo -->
-      <div class="px-6 flex justify-center items-center h-[135px]">
-        <img src="./src/assets/images/brand/google.png" alt="Google"
-          class="h-full max-h-[90px] w-auto object-contain" />
-      </div>
+        <h1
+          class="font-jakarta font-bold text-black dark:text-white text-[32px] md:text-[64px] leading-tight md:leading-[82px] my-6">
+          Google <br class="block md:hidden" />
+          <span class="text-active text-[#F44335] dark:text-[#F44335] border-b-[3px] border-active inline-block">
+            IT Support
+          </span> Certificate
+        </h1>
 
-      <!-- DWP Logo -->
-      <div class="px-6 flex justify-center items-center h-[135px]">
-        <img src="./src/assets/images/brand/work-person.png" alt="Department for Work & Pensions"
-          class="h-full max-h-[90px] w-auto object-contain" />
-      </div>
-
-      <!-- C4U Logo -->
-      <div class="px-6 flex justify-center items-center h-[135px]">
-        <img src="./src/assets/images/brand/brand-logo.png" alt="Creatives For You"
-          class="h-full max-h-[90px] w-auto object-contain" />
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="skill" class="max-w-[1440px] mx-auto px-4 md:px-20 py-[104px] dark:bg-gray-500">
-  <!-- Learn Section -->
-  <div class="flex flex-col lg:flex-row gap-6 mb-12">
-    
-    <!-- What You Will Learn -->
-    <div class="p-8 bg-white dark:bg-white/20 rounded-3xl shadow-md lg:w-1/2">
-      <h2 class="text-black dark:text-white text-2xl font-semibold mb-6">What you will learn</h2>
-      <ul class="space-y-6 pt-2">
-        <li class="flex items-start gap-4">
-          <span class="min-w-[50px] h-[50px] bg-[#F9CCC7] flex items-center justify-center rounded-full">
-            <!-- Checkmark SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6 text-[#000]">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-            </svg>
-          </span>
-          <p class="text-lg text-[#181818] dark:text-white">
-            Gain skills required to succeed in an entry-level IT job
-          </p>
-        </li>
-        <li class="flex items-start gap-4">
-          <span class="min-w-[50px] h-[50px] bg-[#F9CCC7] flex items-center justify-center rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6 text-[#000]">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-            </svg>
-          </span>
-          <p class="text-lg text-[#181818] dark:text-white">
-            Perform IT tasks like computer assembly, networking, installing software, and customer service
-          </p>
-        </li>
-        <li class="flex items-start gap-4">
-          <span class="min-w-[50px] h-[50px] bg-[#F9CCC7] flex items-center justify-center rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6 text-[#000]">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-            </svg>
-          </span>
-          <p class="text-lg text-[#181818] dark:text-white">
-            Provide customer support from identifying issues to debugging
-          </p>
-        </li>
-        <li class="flex items-start gap-4">
-          <span class="min-w-[50px] h-[50px] bg-[#F9CCC7] flex items-center justify-center rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6 text-[#000]">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-            </svg>
-          </span>
-          <p class="text-lg text-[#181818] dark:text-white">
-            Use tools like Linux, DNS, Command-Line Interface, and Binary Code
-          </p>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Skills You Will Gain -->
-    <div class="bg-white dark:bg-white/20 rounded-3xl shadow-md lg:w-1/2 overflow-hidden">
-      <img src="./src/assets/images/learn/it-social.png" alt="IT skills illustration"
-        class="w-full h-[245px] object-contain object-center bg-white rounded-t-3xl" />
-      <div class="p-8">
-        <h2 class="text-black dark:text-white text-2xl font-semibold mb-6">Skills you will gain</h2>
-        <div class="flex flex-wrap gap-3">
-          <!-- Tag Style -->
-          <span class="px-4 py-2 bg-white dark:bg-transparent border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Debugging</span>
-          <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Customer Service</span>
-          <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Customer Support</span>
-          <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Domain Name System (DNS)</span>
-          <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Network Model</span>
-          <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Linux</span>
-          <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Encryption Algorithms and Techniques</span>
-          <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Network Protocols</span>
-          <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">IPv4</span>
-          <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Troubleshooting</span>
-          <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Binary Code</span>
-          <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Cloud Computing</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Certificate Section -->
-  <div class="flex flex-col lg:flex-row gap-6">
-    <!-- Job Roles -->
-    <div class="p-8 bg-white dark:bg-white/20 rounded-3xl shadow-md lg:w-1/2">
-      <h2 class="text-black dark:text-white text-2xl font-semibold mb-6">Jobs Associated with Certificate</h2>
-      <div class="flex flex-col md:flex-row gap-6">
-        <ul class="space-y-3 w-full">
-          <li class="flex items-center gap-3">
-            <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
-            <p class="text-lg text-[#181818] dark:text-white">Database Administrator</p>
-          </li>
-          <li class="flex items-center gap-3">
-            <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
-            <p class="text-lg text-[#181818] dark:text-white">Tech Support Specialist</p>
-          </li>
-          <li class="flex items-center gap-3">
-            <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
-            <p class="text-lg text-[#181818] dark:text-white">IT Specialist</p>
-          </li>
-          <li class="flex items-center gap-3">
-            <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
-            <p class="text-lg text-[#181818] dark:text-white">Systems Analyst</p>
-          </li>
-        </ul>
-        <ul class="space-y-3 w-full">
-          <li class="flex items-center gap-3">
-            <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
-            <p class="text-lg text-[#181818] dark:text-white">Network Administrator</p>
-          </li>
-          <li class="flex items-center gap-3">
-            <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
-            <p class="text-lg text-[#181818] dark:text-white">Help Desk Technician</p>
-          </li>
-          <li class="flex items-center gap-3">
-            <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
-            <p class="text-lg text-[#181818] dark:text-white">Technical Support Engineer</p>
-          </li>
-          <li class="flex items-center gap-3">
-            <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
-            <p class="text-lg text-[#181818] dark:text-white">Security Analyst</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Certificate Image -->
-    <div class="lg:w-1/2">
-      <img src="./src/assets/images/cirtificate/it-support-1.png" alt="IT Certificate"
-        class="w-full h-full object-contain rounded-3xl shadow-md" />
-    </div>
-  </div>
-</section>
-
-<!-- Course Tag Section -->
-<section id="course" class="w-full bg-white dark:bg-gray-700 px-4 md:px-20 py-8 md:py-12">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
-
-    <!-- Left Content -->
-    <div class="flex-1">
-      <h2 class="text-2xl md:text-4xl font-bold text-[#2D3142] dark:text-white mb-6 max-w-xl leading-snug">
-        There are 5 Courses in this Professional Certificate
-      </h2>
-
-      <!-- Course Buttons -->
-      <div id="course-buttons" class="flex flex-wrap gap-3 md:gap-4 border-b border-[#F9CCC7] pb-4">
-        <button
-          class="course-btn active-course border border-[#232323] bg-[#00FF84] text-black hover:bg-[#00e176] dark:hover:bg-[#00cc6a] transition-all duration-300 shadow-md hover:shadow-lg rounded-full px-5 py-2 cursor-pointer text-sm md:text-base font-medium font-jakarta">
-          Course 1
-        </button>
-        <button
-          class="course-btn border border-[#232323] text-[#2D3142] dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-300 shadow-sm hover:shadow-lg rounded-full px-5 py-2 cursor-pointer text-sm md:text-base font-medium font-jakarta">
-          Course 2
-        </button>
-        <button
-          class="course-btn border border-[#232323] text-[#2D3142] dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-300 shadow-sm hover:shadow-lg rounded-full px-5 py-2 cursor-pointer text-sm md:text-base font-medium font-jakarta">
-          Course 3
-        </button>
-        <button
-          class="course-btn border border-[#232323] text-[#2D3142] dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-300 shadow-sm hover:shadow-lg rounded-full px-5 py-2 cursor-pointer text-sm md:text-base font-medium font-jakarta">
-          Course 4
-        </button>
-        <button
-          class="course-btn border border-[#232323] text-[#2D3142] dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-300 shadow-sm hover:shadow-lg rounded-full px-5 py-2 cursor-pointer text-sm md:text-base font-medium font-jakarta">
-          Course 5
-        </button>
-      </div>
-    </div>
-
-    <!-- Right Image -->
-    <div class="flex-1 max-w-[280px] md:max-w-[320px]">
-      <img src="./src/assets/images/cirtificate/winner.png" alt="Professional Certificate Badge"
-        class="w-full h-auto object-contain" />
-    </div>
-
-  </div>
-</section>
-
-  <!-- Course Section -->
-  <section id="course-1" class="max-w-360 mx-auto md:px-20 pt-[232px] px-4 dark:bg-gray-500">
-    <div class="course_1_content flex flex-col md:flex-row gap-y-4 relative pb-[240px]">
-      <div
-        class="left_contet md:w-3/12 bg-[#2D3142] ps-[25px] pe-[27px] pt-[16.5px] md:rounded-s-2xl rounded-s-2xl rounded-e-2xl md:rounded-e-[0px] flex flex-col justify-start pb-16">
-        <p class="text-[#00FF84] font-jakarta text-sm font-normal pb-6">
-          Course 1
+        <p class="font-jakarta text-gray-600 dark:text-white text-base md:text-lg mb-10">
+          This is your path to a career in IT. In this program, you’ll learn in-demand skills with no degree or
+          experience required.
         </p>
-        <div class="rating_course max-w-[259px] font-jakarta">
-          <h2 class="font-jakarta text-white text-8 font-semibold tracking-[1.28px] mb-5">
-            Technical Support Fundamentals
-          </h2>
-          <div class="count_rating flex flex-row justify-between items-center">
-            <span class="text-[#00FF84] text-sm font-normal font-jakarta">132,411 ratings</span><img
-              src="./src/assets/images/course-5/Stars.png" alt="" class="ms-auto mt-[10px]" /><span
-              class="text-[#FFCB45]">4.8</span>
+
+        <!-- Stats Grid -->
+        <div class="flex flex-wrap lg:flex-nowrap justify-center lg:justify-start gap-x-6 gap-y-6 mb-10">
+          <div class="text-center min-w-[80px]">
+            <p class="text-[#00FF84] text-2xl font-bold">438</p>
+            <p class="text-[#2D3142] dark:text-white text-lg">Videos</p>
+          </div>
+          <div class="text-center min-w-[80px]">
+            <p class="text-[#00FF84] text-2xl font-bold">151</p>
+            <p class="text-[#2D3142] dark:text-white text-lg">Readings</p>
+          </div>
+          <div class="text-center min-w-[80px]">
+            <p class="text-[#00FF84] text-2xl font-bold">108</p>
+            <p class="text-[#2D3142] dark:text-white text-lg">Quizzes</p>
+          </div>
+          <div class="text-center min-w-[80px]">
+            <p class="text-[#00FF84] text-2xl font-bold">24</p>
+            <p class="text-[#2D3142] dark:text-white text-lg">Exercises</p>
+          </div>
+          <div class="text-center min-w-[80px]">
+            <p class="text-[#00FF84] text-2xl font-bold">4</p>
+            <p class="text-[#2D3142] dark:text-white text-lg">Assignments</p>
           </div>
         </div>
-        <div class="button_content flex flex-col gap-6 sm:flex-row sm:justify-center md:justify-between mt-12">
-          <a href="#"
-            class="inline-block rounded-lg bg-active px-9 py-4 text-center text-xs text-white outline-none ring-indigo-300 transition duration-100 hover:bg-active/50 focus-visible:ring active:bg-active font-jakarta font-normal leading-[27px]">Sign
-            up</a>
 
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row gap-5 sm:justify-center lg:justify-start">
           <a href="#"
-            class="inline-block rounded-lg bg-white px-9 py-4 text-center text-xs text-[#072125] outline-none border-[1px] border-solid border-white transition duration-100 hover:bg-active/50 focus-visible:ring active:bg-active font-jakarta font-normal leading-[27px]">Next</a>
+            class="bg-[#FF5A5F] hover:bg-[#e24c51] text-white px-9 py-4 rounded-lg text-lg font-medium transition">
+            Sign up
+          </a>
+          <a href="#"
+            class="bg-white text-[#072125] dark:bg-transparent dark:text-white border border-[#FF5A5F] px-9 py-4 rounded-lg text-lg font-medium transition hover:bg-[#ff5a5f]/10">
+            Learn more
+          </a>
         </div>
-        <p class="font-jakarta text-xs font-normal text-white mt-auto">
-          When you complete all of the courses in the program, you'll earn a
-          Certificate to share with your professional network as well as
-          unlock access to career support resources to help you kickstart
-          your new career.
-        </p>
       </div>
+
+      <!-- Image Section -->
+      <div class="relative lg:w-6/12 flex justify-center items-center">
+        <div class="relative z-10 w-full max-w-[480px]">
+          <img src="./src/assets/images/hero/hero.png" alt="Hero Image"
+            class="rounded-full object-cover w-full h-auto border-4 border-white dark:border-[#181C14]" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Brand Section -->
+  <section id="brand" class="bg-white dark:bg-[#181C14] py-8">
+    <div class="max-w-[1440px] mx-auto px-4 md:px-10">
       <div
-        class="right_contet md:w-9/12 bg-white dark:bg-white/25 md:rounded-e-2xl rounded-e-2xl rounded-s-2xl md:rounded-s-[0px]">
-        <div class="about_course p-6">
-          <h4 class="text-[#F9CCC7] text-lg font-extrabold mb-2">
-            About this course
-          </h4>
-          <p class="text-[#072125] text-sm font-normal">
-            This course is the first of a series that aims to prepare you
-            for a role as an entry-level IT Support Specialist. In this
-            course, you’ll be introduced to the world of Information
-            Technology, or IT. You’ll learn about the different facets of
-            Information Technology, like computer hardware, the Internet,
-            computer software, troubleshooting, and customer service. This
-            course covers a wide variety of topics in IT that are designed
-            to give you an overview of what’s to come in this certificate
-            program.
+        class="grid grid-cols-1 md:grid-cols-4 items-center divide-y md:divide-y-0 md:divide-x divide-[#D1D3D4] dark:divide-gray-700">
+
+        <!-- Description -->
+        <div class="px-6 flex items-center justify-center md:justify-start h-[135px]">
+          <p
+            class="text-[#2D3142] dark:text-white max-w-[300px] text-sm md:text-base leading-relaxed text-center md:text-left">
+            Pave your path to career success by gaining a professional Google certificate with the support of C4U
           </p>
         </div>
-        <div class="you_learn ps-6">
-          <h2 class="text-[#F9CCC7] text-lg font-extrabold mb-2">
-            What you will learn
-          </h2>
-          <ul class="flex flex-col items-start justify-between pt-2 gap-4">
-            <li class="flex items-center gap-4">
-              <span class="size-[30px] bg-[#F9CCC7] inline-flex items-center justify-center rounded-full"><svg
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-4 stroke-active">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-              </span>
-              <p class="font-normal text-lg text-[#181818]">
-                Understand how the binary system works
-              </p>
+
+        <!-- Google Logo -->
+        <div class="px-6 flex justify-center items-center h-[135px]">
+          <img src="./src/assets/images/brand/google.png" alt="Google"
+            class="h-full max-h-[90px] w-auto object-contain" />
+        </div>
+
+        <!-- DWP Logo -->
+        <div class="px-6 flex justify-center items-center h-[135px]">
+          <img src="./src/assets/images/brand/work-person.png" alt="Department for Work & Pensions"
+            class="h-full max-h-[90px] w-auto object-contain" />
+        </div>
+
+        <!-- C4U Logo -->
+        <div class="px-6 flex justify-center items-center h-[135px]">
+          <img src="./src/assets/images/brand/brand-logo.png" alt="Creatives For You"
+            class="h-full max-h-[90px] w-auto object-contain" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skill" class="max-w-[1440px] mx-auto px-4 md:px-20 py-[104px] dark:bg-gray-500">
+    <!-- Learn Section -->
+    <div class="flex flex-col lg:flex-row gap-6 mb-12">
+
+      <!-- What You Will Learn -->
+      <div class="p-8 bg-white dark:bg-white/20 rounded-3xl shadow-md lg:w-1/2">
+        <h2 class="text-black dark:text-white text-2xl font-semibold mb-6">What you will learn</h2>
+        <ul class="space-y-6 pt-2">
+          <li class="flex items-start gap-4">
+            <span class="min-w-[50px] h-[50px] bg-[#F9CCC7] flex items-center justify-center rounded-full">
+              <!-- Checkmark SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-[#000]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </span>
+            <p class="text-lg text-[#181818] dark:text-white">
+              Gain skills required to succeed in an entry-level IT job
+            </p>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="min-w-[50px] h-[50px] bg-[#F9CCC7] flex items-center justify-center rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-[#000]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </span>
+            <p class="text-lg text-[#181818] dark:text-white">
+              Perform IT tasks like computer assembly, networking, installing software, and customer service
+            </p>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="min-w-[50px] h-[50px] bg-[#F9CCC7] flex items-center justify-center rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-[#000]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </span>
+            <p class="text-lg text-[#181818] dark:text-white">
+              Provide customer support from identifying issues to debugging
+            </p>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="min-w-[50px] h-[50px] bg-[#F9CCC7] flex items-center justify-center rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-[#000]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </span>
+            <p class="text-lg text-[#181818] dark:text-white">
+              Use tools like Linux, DNS, Command-Line Interface, and Binary Code
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Skills You Will Gain -->
+      <div class="bg-white dark:bg-white/20 rounded-3xl shadow-md lg:w-1/2 overflow-hidden">
+        <img src="./src/assets/images/learn/it-social.png" alt="IT skills illustration"
+          class="w-full h-[245px] object-contain object-center bg-white rounded-t-3xl" />
+        <div class="p-8">
+          <h2 class="text-black dark:text-white text-2xl font-semibold mb-6">Skills you will gain</h2>
+          <div class="flex flex-wrap gap-3">
+            <!-- Tag Style -->
+            <span
+              class="px-4 py-2 bg-white dark:bg-transparent border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Debugging</span>
+            <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Customer
+              Service</span>
+            <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Customer
+              Support</span>
+            <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Domain Name
+              System (DNS)</span>
+            <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Network
+              Model</span>
+            <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Linux</span>
+            <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Encryption
+              Algorithms and Techniques</span>
+            <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Network
+              Protocols</span>
+            <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">IPv4</span>
+            <span
+              class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Troubleshooting</span>
+            <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Binary
+              Code</span>
+            <span class="px-4 py-2 border border-[#F9CCC7] rounded-full text-sm text-black dark:text-white">Cloud
+              Computing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificate Section -->
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- Job Roles -->
+      <div class="p-8 bg-white dark:bg-white/20 rounded-3xl shadow-md lg:w-1/2">
+        <h2 class="text-black dark:text-white text-2xl font-semibold mb-6">Jobs Associated with Certificate</h2>
+        <div class="flex flex-col md:flex-row gap-6">
+          <ul class="space-y-3 w-full">
+            <li class="flex items-center gap-3">
+              <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
+              <p class="text-lg text-[#181818] dark:text-white">Database Administrator</p>
             </li>
-            <li class="flex items-center gap-4">
-              <span class="size-[30px] bg-[#F9CCC7] inline-flex items-center justify-center rounded-full"><svg
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-4 stroke-active">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-              </span>
-              <p class="font-normal text-lg text-[#181818]">
-                Learn how applications are created and how they work under
-                the hood of a computer
-              </p>
+            <li class="flex items-center gap-3">
+              <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
+              <p class="text-lg text-[#181818] dark:text-white">Tech Support Specialist</p>
             </li>
-            <li class="flex items-center gap-4">
-              <span class="size-[30px] bg-[#F9CCC7] inline-flex items-center justify-center rounded-full"><svg
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-4 stroke-active">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-              </span>
-              <p class="font-normal text-lg text-[#181818]">
-                Utilize common problem-solving methodologies and soft skills
-                in an Information Technology setting
-              </p>
+            <li class="flex items-center gap-3">
+              <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
+              <p class="text-lg text-[#181818] dark:text-white">IT Specialist</p>
             </li>
-            <li class="flex items-center gap-4">
-              <span class="size-[30px] bg-[#F9CCC7] inline-flex items-center justify-center rounded-full"><svg
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-4 stroke-active">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-              </span>
-              <p class="font-normal text-lg text-[#181818]">
-                Assemble a computer from scratch
-              </p>
+            <li class="flex items-center gap-3">
+              <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
+              <p class="text-lg text-[#181818] dark:text-white">Systems Analyst</p>
             </li>
-            <li class="flex items-center gap-4">
-              <span class="size-[30px] bg-[#F9CCC7] inline-flex items-center justify-center rounded-full"><svg
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-4 stroke-active">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-              </span>
-              <p class="font-normal text-lg text-[#181818]">
-                Choose and install an operating system on a computer
-              </p>
+          </ul>
+          <ul class="space-y-3 w-full">
+            <li class="flex items-center gap-3">
+              <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
+              <p class="text-lg text-[#181818] dark:text-white">Network Administrator</p>
             </li>
-            <li class="flex items-center gap-4">
-              <span class="size-[30px] bg-[#F9CCC7] inline-flex items-center justify-center rounded-full"><svg
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-4 stroke-active">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-              </span>
-              <p class="font-normal text-lg text-[#181818]">
-                Understand what the Internet is, how it works, and the
-                impact it has in the modern world
-              </p>
+            <li class="flex items-center gap-3">
+              <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
+              <p class="text-lg text-[#181818] dark:text-white">Help Desk Technician</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
+              <p class="text-lg text-[#181818] dark:text-white">Technical Support Engineer</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <img src="./src/assets/images/Checkmark.svg" alt="✓" class="w-5 h-5" />
+              <p class="text-lg text-[#181818] dark:text-white">Security Analyst</p>
             </li>
           </ul>
         </div>
-        <div class="learn_tag px-6 py-6">
-          <h2 class="text-[#F9CCC7] text-lg font-extrabold pb-2">
-            Skills you will gain
-          </h2>
-          <div class="tags flex flex-wrap gap-4">
-            <span
-              class="cursor-pointer border-active border-1 rounded-[100px] py-2 px-3 text-[#181818] text-lg font-normal bg-white font-jakarta">Binary
-              Code</span>
-            <span
-              class="cursor-pointer border-active border-1 rounded-[100px] py-2 px-3 text-[#181818] text-lg font-normal bg-white font-jakarta">Troubleshooting</span>
+      </div>
 
-            <span
-              class="cursor-pointer border-active border-1 rounded-[100px] py-2 px-3 text-[#181818] text-lg font-normal bg-white font-jakarta">Customer
-              Support</span>
+      <!-- Certificate Image -->
+      <div class="lg:w-1/2">
+        <img src="./src/assets/images/cirtificate/it-support-1.png" alt="IT Certificate"
+          class="w-full h-full object-contain rounded-3xl shadow-md" />
+      </div>
+    </div>
+  </section>
 
-            <span
-              class="cursor-pointer border-active border-1 rounded-[100px] py-2 px-3 text-[#181818] text-lg font-normal bg-white font-jakarta">Linux</span>
+  <!-- Course Tag Section -->
+  <section id="course" class="w-full bg-white dark:bg-gray-700 px-4 md:px-20 py-8 md:py-12">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
+
+      <!-- Left Content -->
+      <div class="flex-1">
+        <h2 class="text-2xl md:text-4xl font-bold text-[#2D3142] dark:text-white mb-6 max-w-xl leading-snug">
+          There are 5 Courses in this Professional Certificate
+        </h2>
+
+        <!-- Course Buttons -->
+        <div id="course-buttons" class="flex flex-wrap gap-3 md:gap-4 border-b border-[#F9CCC7] pb-4">
+          <button
+            class="course-btn active-course border border-[#232323] bg-[#00FF84] text-black hover:bg-[#00e176] dark:hover:bg-[#00cc6a] transition-all duration-300 shadow-md hover:shadow-lg rounded-full px-5 py-2 cursor-pointer text-sm md:text-base font-medium font-jakarta">
+            Course 1
+          </button>
+          <button
+            class="course-btn border border-[#232323] text-[#2D3142] dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-300 shadow-sm hover:shadow-lg rounded-full px-5 py-2 cursor-pointer text-sm md:text-base font-medium font-jakarta">
+            Course 2
+          </button>
+          <button
+            class="course-btn border border-[#232323] text-[#2D3142] dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-300 shadow-sm hover:shadow-lg rounded-full px-5 py-2 cursor-pointer text-sm md:text-base font-medium font-jakarta">
+            Course 3
+          </button>
+          <button
+            class="course-btn border border-[#232323] text-[#2D3142] dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-300 shadow-sm hover:shadow-lg rounded-full px-5 py-2 cursor-pointer text-sm md:text-base font-medium font-jakarta">
+            Course 4
+          </button>
+          <button
+            class="course-btn border border-[#232323] text-[#2D3142] dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-300 shadow-sm hover:shadow-lg rounded-full px-5 py-2 cursor-pointer text-sm md:text-base font-medium font-jakarta">
+            Course 5
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="flex-1 max-w-[280px] md:max-w-[320px]">
+        <img src="./src/assets/images/cirtificate/winner.png" alt="Professional Certificate Badge"
+          class="w-full h-auto object-contain" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Course Section -->
+  <section id="course-1" class="max-w-360 mx-auto md:px-20 pt-[232px] px-4 dark:bg-gray-500">
+    <div class="course_1_content flex flex-col md:flex-row gap-y-6 md:gap-y-0 relative pb-40 md:pb-60 px-4 md:px-0">
+      <!-- Left Content -->
+      <div
+        class="left_contet md:w-3/12 bg-[#2D3142] p-6 rounded-2xl md:rounded-s-2xl md:rounded-e-none flex flex-col justify-start">
+        <p class="text-[#00FF84] text-sm font-jakarta pb-4">Course 1</p>
+
+        <div class="rating_course max-w-[259px] font-jakarta">
+          <h2 class="text-white text-lg md:text-xl font-semibold tracking-wide mb-4">Technical Support Fundamentals</h2>
+          <div class="count_rating flex justify-between items-center gap-2">
+            <span class="text-[#00FF84] text-sm">132,411 ratings</span>
+            <img src="./src/assets/images/course-5/Stars.png" alt="Rating Stars" class="ms-auto mt-1 w-20 md:w-auto" />
+            <span class="text-[#FFCB45] text-sm">4.8</span>
           </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button_content flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-between mt-10">
+          <a href="#"
+            class="bg-active hover:bg-active/80 transition rounded-lg px-6 py-3 text-xs text-white text-center font-jakarta shadow-md">
+            Sign up
+          </a>
+          <a href="#"
+            class="bg-white hover:bg-active/60 text-[#072125] border border-white transition rounded-lg px-6 py-3 text-xs text-center font-jakarta shadow-md">
+            Next
+          </a>
+        </div>
+
+        <p class="text-white text-xs font-jakarta mt-auto pt-6 leading-relaxed">
+          When you complete all of the courses in the program, you'll earn a Certificate to share with your professional
+          network and unlock access to career support resources.
+        </p>
+      </div>
+
+      <!-- Right Content -->
+      <div
+        class="right_contet md:w-9/12 bg-white dark:bg-white/25 rounded-2xl md:rounded-e-2xl md:rounded-s-none mt-6 md:mt-0">
+        <div class="about_course p-6">
+          <h4 class="text-[#F9CCC7] text-lg font-extrabold mb-2">About this course</h4>
+          <p class="text-[#072125] text-sm">
+            This course is the first in a series that prepares you for a role as an entry-level IT Support Specialist.
+            You'll explore hardware, software, troubleshooting, customer service, and more.
+          </p>
+        </div>
+
+        <!-- What you'll learn -->
+        <div class="you_learn px-6">
+          <h2 class="text-[#F9CCC7] text-lg font-extrabold mb-2">What you will learn</h2>
+          <ul class="flex flex-col gap-4 pt-2">
+            <li class="flex items-center gap-3 group">
+              <span class="size-8 bg-[#F9CCC7] inline-flex items-center justify-center rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 stroke-active" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+              </span>
+              <p class="text-[#181818] text-base group-hover:text-active transition">Understand how the binary system
+                works</p>
+            </li>
+            <li class="flex items-center gap-3 group">
+              <span class="size-8 bg-[#F9CCC7] inline-flex items-center justify-center rounded-full">
+                <svg class="size-4 stroke-active" ... /></svg>
+              </span>
+              <p class="text-[#181818] text-base group-hover:text-active transition">Learn how applications work under
+                the hood</p>
+            </li>
+            <li class="flex items-center gap-3 group">
+              <span class="size-8 bg-[#F9CCC7] inline-flex items-center justify-center rounded-full">
+                <svg class="size-4 stroke-active" ... /></svg>
+              </span>
+              <p class="text-[#181818] text-base group-hover:text-active transition">Use soft skills in IT settings</p>
+            </li>
+            <li class="flex items-center gap-3 group">
+              <span class="size-8 bg-[#F9CCC7] inline-flex items-center justify-center rounded-full">
+                <svg class="size-4 stroke-active" ... /></svg>
+              </span>
+              <p class="text-[#181818] text-base group-hover:text-active transition">Assemble a computer from scratch
+              </p>
+            </li>
+            <li class="flex items-center gap-3 group">
+              <span class="size-8 bg-[#F9CCC7] inline-flex items-center justify-center rounded-full">
+                <svg class="size-4 stroke-active" ... /></svg>
+              </span>
+              <p class="text-[#181818] text-base group-hover:text-active transition">Install an operating system</p>
+            </li>
+            <li class="flex items-center gap-3 group">
+              <span class="size-8 bg-[#F9CCC7] inline-flex items-center justify-center rounded-full">
+                <svg class="size-4 stroke-active" ... /></svg>
+              </span>
+              <p class="text-[#181818] text-base group-hover:text-active transition">Understand the Internet and its
+                impact</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Skills Tags -->
+        <div class="learn_tag px-6 py-6">
+          <h2 class="text-[#F9CCC7] text-lg font-extrabold mb-3">Skills you will gain</h2>
+          <div class="tags flex flex-wrap gap-3">
+            <span
+              class="cursor-pointer border border-active rounded-full py-2 px-4 text-[#181818] text-base bg-white hover:text-active hover:shadow-md hover:outline hover:outline-2 hover:outline-active hover:ring-2 transition">
+              Binary Code
+            </span>
+            <span
+              class="cursor-pointer border border-active rounded-full py-2 px-4 text-[#181818] text-base bg-white hover:text-active hover:shadow-md hover:outline hover:outline-2 hover:outline-active hover:ring-2 transition">
+              Troubleshooting
+            </span>
+            <span
+              class="cursor-pointer border border-active rounded-full py-2 px-4 text-[#181818] text-base bg-white hover:text-active hover:shadow-md hover:outline hover:outline-2 hover:outline-active hover:ring-2 transition">
+              Customer Support
+            </span>
+            <span
+              class="cursor-pointer border border-active rounded-full py-2 px-4 text-[#181818] text-base bg-white hover:text-active hover:shadow-md hover:outline hover:outline-2 hover:outline-active hover:ring-2 transition">
+              Linux
+            </span>
+          </div>
+
+          <!-- Info List -->
           <div class="infromation pt-8">
-            <h4 class="text-[#F9CCC7] text-lg font-extrabold mb-2">
-              Information
-            </h4>
-            <ul class="list-disc list-inside marker:text-[#F9CCC7] flex flex-col gap-4">
-              <li class="item-1">FFlexible deadlines</li>
-              <li class="item-2">Shareable Certificate</li>
-              <li class="item-3">1 100% online</li>
-              <li class="item-4">BBeginner Level</li>
-              <li class="item-5">AApprox. 20 hours to complete</li>
+            <h4 class="text-[#F9CCC7] text-lg font-extrabold mb-2">Information</h4>
+            <ul class="list-disc list-inside marker:text-[#F9CCC7] flex flex-col gap-3 text-sm text-[#181818]">
+              <li>Flexible deadlines</li>
+              <li>Shareable Certificate</li>
+              <li>100% online</li>
+              <li>Beginner Level</li>
+              <li>Approx. 20 hours to complete</li>
             </ul>
           </div>
         </div>
       </div>
-      <img src="./src/assets/images/snake/snake-4.svg" class="absolute px-4 bottom-0 right-0" alt="" />
+
+      <!-- Decorative Image -->
+      <img src="./src/assets/images/snake/snake-4.svg" class="absolute bottom-0 right-0 w-24 md:w-40 px-4"
+        alt="snake" />
     </div>
+
+
 
     <div class="course_2_content flex flex-col md:flex-row gap-y-4">
       <div
@@ -1238,29 +1239,29 @@
 
 
 
-<!-- JavaScript for Active Button -->
-<script>
-  const buttons = document.querySelectorAll(".course-btn");
+  <!-- JavaScript for Active Button -->
+  <script>
+    const buttons = document.querySelectorAll(".course-btn");
 
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      buttons.forEach(b => {
-        b.classList.remove("bg-[#00FF84]", "text-black", "active-course");
-        b.classList.add("text-[#2D3142]");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        buttons.forEach(b => {
+          b.classList.remove("bg-[#00FF84]", "text-black", "active-course");
+          b.classList.add("text-[#2D3142]");
+        });
+        btn.classList.remove("text-[#2D3142]");
+        btn.classList.add("bg-[#00FF84]", "text-black", "active-course");
       });
-      btn.classList.remove("text-[#2D3142]");
-      btn.classList.add("bg-[#00FF84]", "text-black", "active-course");
     });
-  });
-</script>
+  </script>
 
-<!-- Dark Mode Toggle Script -->
-<script>
-  const htmlTag = document.getElementById("htmlTag");
-  document.getElementById("switch").addEventListener("click", function () {
-    htmlTag.classList.toggle("dark");
-  });
-</script>
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const htmlTag = document.getElementById("htmlTag");
+    document.getElementById("switch").addEventListener("click", function () {
+      htmlTag.classList.toggle("dark");
+    });
+  </script>
 </body>
 
 </html>
